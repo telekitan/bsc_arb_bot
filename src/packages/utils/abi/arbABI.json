@@ -1,0 +1,216 @@
+[
+    {
+        "type": "event",
+        "anonymous": false,
+        "name": "OwnershipTransferred",
+        "inputs": [
+            {
+                "type": "address",
+                "name": "previousOwner",
+                "indexed": true
+            },
+            {
+                "type": "address",
+                "name": "newOwner",
+                "indexed": true
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "name": "approve",
+        "constant": false,
+        "payable": false,
+        "inputs": [
+            {
+                "type": "address",
+                "name": "token"
+            },
+            {
+                "type": "address",
+                "name": "spender"
+            },
+            {
+                "type": "uint256",
+                "name": "amount"
+            }
+        ],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "destroysmartcontract",
+        "constant": false,
+        "payable": false,
+        "inputs": [
+            {
+                "type": "address",
+                "name": "_to"
+            }
+        ],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "executearb",
+        "constant": false,
+        "stateMutability": "payable",
+        "payable": true,
+        "inputs": [
+            {
+                "type": "address[]",
+                "name": "tokens"
+            },
+            {
+                "type": "address[]",
+                "name": "pairs"
+            },
+            {
+                "type": "uint256[]",
+                "name": "exchangeFees"
+            },
+            {
+                "type": "uint256",
+                "name": "arbAmount"
+            },
+            {
+                "type": "uint256",
+                "name": "profitAmount"
+            },
+            {
+                "type": "uint256",
+                "name": "slippage"
+            }
+        ],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "getpathprofitability",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [
+            {
+                "type": "address[]",
+                "name": "pairs"
+            },
+            {
+                "type": "address[]",
+                "name": "paths"
+            },
+            {
+                "type": "uint256",
+                "name": "startAmount"
+            },
+            {
+                "type": "uint256[]",
+                "name": "exchangeFees"
+            }
+        ],
+        "outputs": [
+            {
+                "type": "uint256",
+                "name": "profit"
+            },
+            {
+                "type": "uint256",
+                "name": "amountOut"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "name": "getprofitablepool",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [
+            {
+                "type": "address[]",
+                "name": "pairs"
+            },
+            {
+                "type": "address[]",
+                "name": "path"
+            },
+            {
+                "type": "uint256",
+                "name": "startAmount"
+            },
+            {
+                "type": "uint256[]",
+                "name": "exchangeFees"
+            }
+        ],
+        "outputs": [
+            {
+                "type": "address",
+                "name": "profitablePool"
+            },
+            {
+                "type": "uint256",
+                "name": "amountOut"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "name": "owner",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [],
+        "outputs": [
+            {
+                "type": "address"
+            }
+        ]
+    },
+    {
+        "type": "function",
+        "name": "renounceOwnership",
+        "constant": false,
+        "payable": false,
+        "inputs": [],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "transferOwnership",
+        "constant": false,
+        "payable": false,
+        "inputs": [
+            {
+                "type": "address",
+                "name": "newOwner"
+            }
+        ],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "withdrawether",
+        "constant": false,
+        "payable": false,
+        "inputs": [],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "withdrawtokens",
+        "constant": false,
+        "payable": false,
+        "inputs": [
+            {
+                "type": "address",
+                "name": "token"
+            },
+            {
+                "type": "uint256",
+                "name": "amount"
+            }
+        ],
+        "outputs": []
+    }
+]
